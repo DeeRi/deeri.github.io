@@ -4,14 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="libs/owlCarousel/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="libs/owlCarousel/assets/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="libs/owlCarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="libs/owlCarousel/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="main.css" />
     <title>Halcyon</title>
   </head>
 
   <body>
     <header>
+      <nav>
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#professionals">Professionals</a></li>
+          <li><a href="#order">Make an order</a></li>
+          <li><a href="#team">Our team</a></li>
+          <li><a href="#subscription">Subscription</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
       <h1>Halcyondays</h1>
       <p>
         An exclusive HTML5/CSS3 freebie by Peter Finlan, for <i>Codrops</i>.
@@ -21,7 +38,8 @@
 
     <main>
       <section>
-        <h2>A creative portfolio template</h2>
+        <h2 class="hidden" id="portfolio">Portfolio</h2>
+        <p>A creative portfolio template</p>
         <p>
           Sed a lorem quis neque interdum <b>consequat ut sed sem</b>. Duis quis
           tempor nunc. Interdum et malesuada fames ac ante ipsum primis in
@@ -34,7 +52,7 @@
       </section>
 
       <section class="services">
-        <h2 class="hidden">Our services</h2>
+        <h2 class="hidden" id="services">Services</h2>
         <p>Love what you do and you'll do it well</p>
         <div class="services-item">
           <h3>Digital design //</h3>
@@ -65,7 +83,7 @@
       </section>
 
       <section class="professionals">
-        <h2 class="hidden">Professionals</h2>
+        <h2 class="hidden" id="professionals">Professionals</h2>
         <div class="professionals-item">
           <img
             src="images/iPhone.png"
@@ -88,12 +106,11 @@
       </section>
 
       <div class="motto">
-        <h2 class="hidden">Our motto</h2>
         <p>I got 99 problems, but <i>design</i> 'aint one</p>
       </div>
 
       <section class="features">
-        <h2 class="hidden">Our features</h2>
+        <h2 class="hidden" id="features">Our features</h2>
         <div class="features-item">
           <img
             src="images/street.png"
@@ -142,12 +159,12 @@
       </section>
 
       <div class="order">
-        <h2 class="hidden">Make an order</h2>
+        <h2 class="hidden" id="order">Make an order</h2>
         <a href="#" class="button">Ignite your passion</a>
       </div>
 
       <section class="team">
-        <h2 class="hidden">Our team</h2>
+        <h2 class="hidden" id="team">Our team</h2>
         <p>We are a team that adore what we do</p>
         <div class="team-member">
           <img
@@ -191,20 +208,19 @@
             adipiscing libero.
           </p>
         </div>
-
       </section>
 
       <section class="subscription">
-        <h2 class="hidden">Subscription</h2>
+        <h2 class="hidden" id="subscription">Subscription</h2>
         <p>Subscribe to stay in the loop</p>
         <form action="URL" method="POST">
-          <input type="email" name="usermail" />
+          <input type="email" name="usermail" placeholder="Enter your email"/>
           <input type="button" name="submit" value="send" />
         </form>
       </section>
 
       <section class="contacts">
-        <h2 class="hidden">Contacts</h2>
+        <h2 class="hidden" id="contacts">Contacts</h2>
         <p>Drop us a line</p>
         <div>
           <div class="contacts-item">
