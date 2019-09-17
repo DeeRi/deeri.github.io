@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "Gotham Rounded Book";
+  src: url("font/GothamRoundedBook.woff") format("woff"),
+    url("font/GothamRoundedBook.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Rounded Medium";
+  src: url("font/GothamRoundedMedium.woff") format("woff"),
+    url("font/GothamRoundedMedium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Rounded Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Rounded Medium Italic"),
+    url("font/GothamRounded-MediumItalic.woff") format("woff");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Gotham Rounded Medium", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 20px;
+  font-size: 14px;
+  color: #8c9398;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-summary {
+  color: #353535;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 200px;
+}
+
+.subscription .section-summary {
+  color: #ffffff;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  color: #353535;
+}
+
+.container {
+  width: 1040px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.button {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/*HEADER STYLE*/
+.lower-header {
+  font-family: "Gotham Rounded Book", "Arial", sans-serif;
+  text-align: center;
+}
+
+.lower-header h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lower-header p {
+  font-size: 15px;
+}
+
+.lower-header .dark {
+  color: #353535;
+}
+
+.lower-header .light {
+  color: #a1a9b0;
+}
+
+.menu-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-navigation a {
+  color: #353535;
+}
+
+.lower-header a {
+  font-family: "Gotham Rounded Medium", "Arial", sans-serif;
+  background-color: #3dc9b3;
+}
+
+/*PORTFOLIO SECTION STYLE*/
+.portfolio {
+  background-color: #f3f5f8;
+  text-align: center;
+  line-height: 30px;
+}
+
+/*SERVICES SECTION STYLE*/
+.services {
+  text-align: center;
+}
+.services h3 {
+  color: #353535;
+  text-transform: uppercase;
+}
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+/*PROFESSIONALS*/
+
+/*MOTTO*/
+.motto {
+  text-align: center;
+}
+/*FEATURES SECTION STYLE*/
+.features {
+  text-align: center;
+}
+.features h3 {
+  color: #353535;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+.features ul {
+  list-style: none;
+}
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.order a {
+  background-color: #242830;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*ORDER SECTION STYLE*/
+.order {
+  text-align: center;
+  background-color: #242830;
+}
+
+/*TEAM SECTION STYLE*/
+.team {
+  text-align: center;
+}
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-list .social-links {
+  list-style: none;
+}
+.team h3 {
+  color: #353535;
+  text-transform: uppercase;
+}
+
+/*SUBSCRIPTION SECTION STYLE*/
+.subscription {
+  text-align: center;
+  background-color: #242830;
+}
+
+/*CONTACTS SECTION STYLE*/
+.contacts {
+  background-color: #f3f5f8;
+}
+.contacts-item {
+  background-color: #ffffff;
+}
+.contacts-name {
+  color: #3dc9b3;
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*FOOTER STYLE*/
+footer {
+  background-color: #242830;
+}
+.footer-links a {
+  color: #ffffff;
+}
