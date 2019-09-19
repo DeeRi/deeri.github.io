@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Gotham Rounded Book";
-  src: url("font/GothamRoundedBook.woff") format("woff"),
-    url("font/GothamRoundedBook.woff2") format("woff2");
+  src: url("../font/GothamRoundedBook.woff") format("woff"),
+    url("../font/GothamRoundedBook.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham Rounded Medium";
-  src: url("font/GothamRoundedMedium.woff") format("woff"),
-    url("font/GothamRoundedMedium.woff2") format("woff2");
+  src: url("../font/GothamRoundedMedium.woff") format("woff"),
+    url("../font/GothamRoundedMedium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Gotham Rounded Medium Italic"),
-    url("font/GothamRounded-MediumItalic.woff") format("woff");
+    url("../font/GothamRounded-MediumItalic.woff") format("woff");
 }
 
 html,
@@ -191,13 +191,15 @@ a {
   padding: 0;
   margin: 0;
 }
-
 .team-list .social-links {
   list-style: none;
 }
 .team h3 {
   color: #353535;
   text-transform: uppercase;
+}
+.team-member {
+  margin-right: 90px;
 }
 
 /*SUBSCRIPTION SECTION STYLE*/
@@ -208,6 +210,7 @@ a {
 
 /*CONTACTS SECTION STYLE*/
 .contacts {
+  text-align: center;
   background-color: #f3f5f8;
 }
 .contacts-item {
@@ -217,12 +220,14 @@ a {
   color: #3dc9b3;
 }
 
-.contacts-list {
+.contacts ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.contacts-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .contacts-list li {
