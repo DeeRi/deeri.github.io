@@ -47,6 +47,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   line-height: 200px;
+  letter-spacing: 2.5px;
 }
 
 .subscription .section-summary {
@@ -73,7 +74,7 @@ a {
 }
 
 .container {
-  width: 1040px;
+  width: 1140px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -86,18 +87,32 @@ a {
 }
 
 /*HEADER STYLE*/
+header {
+  background-image: url(../images/main_back.jpg);
+  background-size: 1600px 800px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 1600px;
+}
+
 .lower-header {
   font-family: "Gotham Rounded Book", "Arial", sans-serif;
   text-align: center;
+  padding-top: 170px;
+  padding-bottom: 380px;
 }
 
 .lower-header h1 {
   font-size: 40px;
   text-transform: uppercase;
+  letter-spacing: 12px;
+  padding-bottom: 28px;
 }
 
 .lower-header p {
   font-size: 15px;
+  letter-spacing: 3px;
+  padding-bottom: 68px;
 }
 
 .lower-header .dark {
@@ -123,39 +138,101 @@ a {
 .lower-header a {
   font-family: "Gotham Rounded Medium", "Arial", sans-serif;
   background-color: #3dc9b3;
+  letter-spacing: 1px;
 }
 
 /*PORTFOLIO SECTION STYLE*/
 .portfolio {
+  width: 1600px;
   background-color: #f3f5f8;
   text-align: center;
   line-height: 30px;
 }
 
+.portfolio-content {
+  padding-bottom: 125px;
+}
+
 /*SERVICES SECTION STYLE*/
 .services {
-  text-align: center;
+  width: 1600px;
+  min-height: 731px;
 }
+
 .services h3 {
   color: #353535;
   text-transform: uppercase;
 }
+
 .services-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
+
+.services-list li {
+  width: 360px;
+  min-height: 235px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.services-list li:nth-child(3n) {
+  padding-right: 0px;
+}
+
 /*PROFESSIONALS*/
+.professionals {
+  width: 1600px;
+  background-image: url(../images/iPhone.jpg);
+}
+
+.professionals-slider {
+  width: 785px;
+  margin-left: 810px;
+  padding-bottom: 215px;
+  background-color: #ffffff;
+}
+.owl2 {
+  width: 457px;
+}
 
 /*MOTTO*/
 .motto {
+  background-image: url(../images/motto.png);
+  background-size: 1600px 300px;
+  width: 1600px;
   text-align: center;
 }
+.motto-content {
+  padding-bottom: 56px;
+}
+.first-line {
+  font-family: "Gotham Rounded Book", "Arial", sans-serif;
+  text-transform: uppercase;
+  padding-top: 80px;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+.second-line {
+  font-family: "Gotham Rounded Book", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 25px;
+}
+
 /*FEATURES SECTION STYLE*/
 .features {
+  width: 1600px;
   text-align: center;
+}
+.features-content {
+  padding-bottom: 180px;
 }
 .features h3 {
   color: #353535;
@@ -163,34 +240,48 @@ a {
   line-height: 40px;
 }
 .features ul {
+  padding-top: 104px;
   list-style: none;
 }
+
 .features-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
+/*ORDER SECTION STYLE*/
+.order {
+  width: 1600px;
+  text-align: center;
+  background-color: #242830;
+}
 .order a {
+  display: block;
+  padding-top: 90px;
+  padding-bottom: 98px;
   background-color: #242830;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-/*ORDER SECTION STYLE*/
-.order {
-  text-align: center;
-  background-color: #242830;
-}
-
 /*TEAM SECTION STYLE*/
 .team {
+  width: 1600px;
   text-align: center;
+}
+.team-content {
+  padding-bottom: 205px;
 }
 .team-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+.team-member {
+  margin-right: 70px;
+}
+
 .team-list .social-links {
   list-style: none;
 }
@@ -198,23 +289,35 @@ a {
   color: #353535;
   text-transform: uppercase;
 }
-.team-member {
-  margin-right: 90px;
-}
 
 /*SUBSCRIPTION SECTION STYLE*/
 .subscription {
+  width: 1600px;
+  background-image: url(../images/subscription.jpg);
+  background-size: 1600px 451px;
   text-align: center;
   background-color: #242830;
 }
 
+.subscription-content {
+  padding-bottom: 154px;
+}
+
 /*CONTACTS SECTION STYLE*/
 .contacts {
+  width: 1600px;
   text-align: center;
   background-color: #f3f5f8;
 }
+
+.contacts-content {
+  padding-bottom: 240px;
+}
+
 .contacts-item {
   background-color: #ffffff;
+  width: 360px;
+  height: 150px;
 }
 .contacts-name {
   color: #3dc9b3;
@@ -227,7 +330,7 @@ a {
 }
 .contacts-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .contacts-list li {
@@ -236,9 +339,19 @@ a {
   align-items: center;
 }
 
+.contacts-name {
+  padding-bottom: 29px;
+  text-transform: uppercase;
+}
+
 /*FOOTER STYLE*/
 footer {
+  width: 1600px;
   background-color: #242830;
+}
+.footer-links {
+  padding-top: 52px;
+  padding-bottom: 50px;
 }
 .footer-links a {
   color: #ffffff;
