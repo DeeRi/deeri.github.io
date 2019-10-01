@@ -133,6 +133,15 @@ a {
   background-position: center;
 }
 
+.social-links a:hover {
+  background-color: #3dc9b3;
+}
+
+.social-links a:active,
+.social-links a:focus {
+  background-color: #309383;
+}
+
 /*HEADER STYLE*/
 .header-main {
   background-image: url(../images/main_back.jpg);
@@ -178,7 +187,8 @@ a {
   color: #3dc9b3;
 }
 
-.menu-navigation a:active {
+.menu-navigation a:active
+.menu-navigation a:focus  {
   color: #309383;
 }
 
@@ -234,7 +244,8 @@ a {
   transform: translateY(-10px);
 }
 
-.lower-header .button:active {
+.lower-header .button:active,
+.lower-header .button:focus {
   background-color: #242830;
 }
 
@@ -415,6 +426,7 @@ a {
   height: 100%;
   background: rgb(50, 145, 132, 0.6);
   opacity: 0;
+  transition: all 0.2s ease;
 }
 
 .features .img-cover:hover {
@@ -428,6 +440,11 @@ a {
 
 .features .img-cover a:hover {
   color: #242830;
+}
+
+.features .img-cover a:active,
+.features .img-cover a:focus{
+  color: #c8cbcf;
 }
 
 .features .features-sign {
@@ -456,10 +473,24 @@ a {
   letter-spacing: 2px;
   color: #ffffff;
   border: 1px solid #ffffff;
+  border-radius: 2%;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
 }
 
 .order a:hover {
   background-color: #ffffff;
+  color: #242830;
+  transform: translateY(-10px);
+}
+
+.order a:active,
+.orser a:focus {
+  border: 1px  #8c9398;
+  background-color: #8c9398;
+  
   color: #242830;
 }
 
@@ -484,10 +515,6 @@ a {
 .team h3 {
   color: #353535;
   text-transform: uppercase;
-}
-
-.social-links a:hover {
-  background-color: #3dc9b3;
 }
 
 /*SUBSCRIPTION SECTION STYLE*/
@@ -523,7 +550,7 @@ a {
   position: relative;
 }
 
-.subscription .form-subscription button[type="submit"] {
+.subscription .form-subscription button {
   background-color: #3dc9b3;
   border: none;
 
@@ -535,6 +562,16 @@ a {
   font-size: 15px;
   color: #ffffff;
   text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.subscription .form-subscription button:hover {
+  background-color: #309383;
+}
+
+.subscription .form-subscription button:active,
+.subscription .form-subscription button:focus {
+  background-color: #242830;
 }
 
 .subscription .form-subscription input[placeholder] {
@@ -597,9 +634,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.contacts .social-links a:hover {
-  background-color: #3dc9b3;
-}
+
 /*FOOTER STYLE*/
 .footer-main {
   font-weight: 400;
@@ -620,7 +655,8 @@ a {
   color: #ffffff;
 }
 
-.footer-links a:active {
+.footer-links a:active
+.footer-links a:focus {
   text-decoration: underline #8c9398;
   color: #8c9398;
 }
