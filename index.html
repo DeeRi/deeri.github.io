@@ -13,31 +13,33 @@
   <body>
     <header class="header-main">
       <div class="container">
-        <nav class="navigation">
-          <a class="menu-button" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-          <ul class="menu-navigation">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#professionals">Professionals</a></li>
-            <li><a href="#order">Make an order</a></li>
-            <li><a href="#team">Our team</a></li>
-            <li><a href="#subscription">Subscription</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="lower-header">
-          <h1>
-            <span class="dark">Halcyon</span><span class="light">days</span>
-          </h1>
-          <p>
-            An exclusive HTML5/CSS3 freebie by Peter Finlan, for
-            <span class="italics">Codrops</span>.
-          </p>
-          <a href="#" class="button">Learn more</a>
+        <div class="header-content">
+          <nav class="navigation">
+            <ul class="menu-navigation">
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#professionals">Professionals</a></li>
+              <li><a href="#order">Make an order</a></li>
+              <li><a href="#team">Our team</a></li>
+              <li><a href="#subscription">Subscription</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            <a class="menu-button" href="#" aria-label="Open menu button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </nav>
+          <div class="lower-header">
+            <h1>
+              <span class="dark">Halcyon</span><span class="light">days</span>
+            </h1>
+            <p>
+              An exclusive HTML5/CSS3 freebie by Peter Finlan, for
+              <span class="italics">Codrops</span>.
+            </p>
+            <a href="#" class="button">Learn more</a>
+          </div>
         </div>
       </div>
     </header>
@@ -170,102 +172,201 @@
             <h2 class="hidden" id="features">Our features</h2>
             <ul class="owl-carousel owl-theme owl1 features-list">
               <li class="features-item">
-                <img
-                  src="images/street.jpg"
-                  alt="Picture of street lights"
-                  width="361"
-                  height="200"
-                />
-                <h3>Creative minds</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  ultricies nulla non metus pulvinar imperdiet. Praesent non
-                  adipiscing libero.
-                </p>
+                <div class="img-wrapper">
+                  <img
+                    src="images/street.jpg"
+                    alt="Picture of street lights"
+                    width="361"
+                    height="200"
+                  />
+                  <div class="img-cover">
+                    <div class="img-cover-content">
+                      <img
+                        class="features-sign"
+                        src="images/magnifier.svg"
+                        alt=""
+                      />
+                      <a href="#">view more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-item-text">
+                  <h3>Creative minds</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
+                    non adipiscing libero.
+                  </p>
+                </div>
               </li>
               <li class="features-item">
-                <img
-                  src="images/laptop.png"
-                  alt="Picture of laptop and coffee cup"
-                  width="361"
-                  height="200"
-                />
-                <h3>Think alike</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  ultricies nulla non metus pulvinar imperdiet. Praesent non
-                  adipiscing libero.
-                </p>
+                <div class="img-wrapper">
+                  <img
+                    src="images/laptop.png"
+                    alt="Picture of laptop and coffee cup"
+                    width="361"
+                    height="200"
+                  />
+                  <div class="img-cover">
+                    <div class="img-cover-content">
+                      <img
+                        class="features-sign"
+                        src="images/magnifier.svg"
+                        alt=""
+                      />
+                      <a href="#">view more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-item-text">
+                  <h3>Think alike</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
+                    non adipiscing libero.
+                  </p>
+                </div>
               </li>
               <li class="features-item">
-                <img
-                  src="images/dog.jpg"
-                  alt="Dog picture"
-                  width="361"
-                  height="200"
-                />
-                <h3>Pixel perfection</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  ultricies nulla non metus pulvinar imperdiet. Praesent non
-                  adipiscing libero.
-                </p>
+                <div class="img-wrapper">
+                  <img
+                    src="images/dog.jpg"
+                    alt="Dog picture"
+                    width="361"
+                    height="200"
+                  />
+                  <div class="img-cover">
+                    <div class="img-cover-content">
+                      <img
+                        class="features-sign"
+                        src="images/magnifier.svg"
+                        alt=""
+                      />
+                      <a href="#">view more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-item-text">
+                  <h3>Pixel perfection</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
+                    non adipiscing libero.
+                  </p>
+                </div>
+              </li>
+
+              <li class="features-item">
+                <div class="img-wrapper">
+                  <img
+                    src="images/street.jpg"
+                    alt="Picture of street lights"
+                    width="361"
+                    height="200"
+                  />
+                  <div class="img-cover">
+                    <div class="img-cover-content">
+                      <img
+                        class="features-sign"
+                        src="images/magnifier.svg"
+                        alt=""
+                      />
+                      <a href="#">view more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-item-text">
+                  <h3>Creative minds</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
+                    non adipiscing libero.
+                  </p>
+                </div>
               </li>
               <li class="features-item">
-                <img
-                  src="images/street.jpg"
-                  alt="Picture of street lights"
-                  width="361"
-                  height="200"
-                />
-                <h3>Creative minds</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  ultricies nulla non metus pulvinar imperdiet. Praesent non
-                  adipiscing libero.
-                </p>
+                <div class="img-wrapper">
+                  <img
+                    src="images/street.jpg"
+                    alt="Picture of street lights"
+                    width="361"
+                    height="200"
+                  />
+                  <div class="img-cover">
+                    <div class="img-cover-content">
+                      <img
+                        class="features-sign"
+                        src="images/magnifier.svg"
+                        alt=""
+                      />
+                      <a href="#">view more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-item-text">
+                  <h3>Creative minds</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
+                    non adipiscing libero.
+                  </p>
+                </div>
               </li>
               <li class="features-item">
-                <img
-                  src="images/street.jpg"
-                  alt="Picture of street lights"
-                  width="361"
-                  height="200"
-                />
-                <h3>Creative minds</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  ultricies nulla non metus pulvinar imperdiet. Praesent non
-                  adipiscing libero.
-                </p>
+                <div class="img-wrapper">
+                  <img
+                    src="images/dog.jpg"
+                    alt="Dog picture"
+                    width="361"
+                    height="200"
+                  />
+                  <div class="img-cover">
+                    <div class="img-cover-content">
+                      <img
+                        class="features-sign"
+                        src="images/magnifier.svg"
+                        alt=""
+                      />
+                      <a href="#">view more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-item-text">
+                  <h3>Pixel perfection</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
+                    non adipiscing libero.
+                  </p>
+                </div>
               </li>
               <li class="features-item">
-                <img
-                  src="images/dog.jpg"
-                  alt="Dog picture"
-                  width="361"
-                  height="200"
-                />
-                <h3>Pixel perfection</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  ultricies nulla non metus pulvinar imperdiet. Praesent non
-                  adipiscing libero.
-                </p>
-              </li>
-              <li class="features-item">
-                <img
-                  src="images/dog.jpg"
-                  alt="Dog picture"
-                  width="361"
-                  height="200"
-                />
-                <h3>Pixel perfection</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  ultricies nulla non metus pulvinar imperdiet. Praesent non
-                  adipiscing libero.
-                </p>
+                <div class="img-wrapper">
+                  <img
+                    src="images/dog.jpg"
+                    alt="Dog picture"
+                    width="361"
+                    height="200"
+                  />
+                  <div class="img-cover">
+                    <div class="img-cover-content">
+                      <img
+                        class="features-sign"
+                        src="images/magnifier.svg"
+                        alt=""
+                      />
+                      <a href="#">view more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-item-text">
+                  <h3>Pixel perfection</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultricies nulla non metus pulvinar imperdiet. Praesent
+                    non adipiscing libero.
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
@@ -283,7 +384,7 @@
         <div class="container">
           <div class="team-content">
             <h2 class="hidden" id="team">Our team</h2>
-            <p class="section-summary">We are a team that adore what we do</p>
+            <p class="section-summary">We're a team that adore what we do</p>
             <ul class="owl-carousel owl-theme owl1 team-list">
               <li class="team-member">
                 <img
@@ -301,17 +402,31 @@
                 <div class="social">
                   <ul class="social-links">
                     <li>
-                      <a href="#" class="social-button" title="Dribble"
-                        >Dribble</a
+                      <a
+                        href="#"
+                        class="social-button dribble"
+                        title="Dribble"
+                        aria-label="Dribble"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Twitter"
-                        >Twitter</a
+                      <a
+                        href="#"
+                        class="social-button twitter"
+                        title="Twitter"
+                        aria-label="Twitter"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Email">Email</a>
+                      <a
+                        href="#"
+                        class="social-button mail"
+                        title="Email"
+                        aria-label="Email"
+                      >
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -333,17 +448,31 @@
                 <div class="social">
                   <ul class="social-links">
                     <li>
-                      <a href="#" class="social-button" title="Dribble"
-                        >Dribble</a
+                      <a
+                        href="#"
+                        class="social-button dribble"
+                        title="Dribble"
+                        aria-label="Dribble"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Twitter"
-                        >Twitter</a
+                      <a
+                        href="#"
+                        class="social-button twitter"
+                        title="Twitter"
+                        aria-label="Twitter"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Email">Email</a>
+                      <a
+                        href="#"
+                        class="social-button mail"
+                        title="Email"
+                        aria-label="Email"
+                      >
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -365,17 +494,31 @@
                 <div class="social">
                   <ul class="social-links">
                     <li>
-                      <a href="#" class="social-button" title="Dribble"
-                        >Dribble</a
+                      <a
+                        href="#"
+                        class="social-button dribble"
+                        title="Dribble"
+                        aria-label="Dribble"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Twitter"
-                        >Twitter</a
+                      <a
+                        href="#"
+                        class="social-button twitter"
+                        title="Twitter"
+                        aria-label="Twitter"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Email">Email</a>
+                      <a
+                        href="#"
+                        class="social-button mail"
+                        title="Email"
+                        aria-label="Email"
+                      >
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -397,17 +540,31 @@
                 <div class="social">
                   <ul class="social-links">
                     <li>
-                      <a href="#" class="social-button" title="Dribble"
-                        >Dribble</a
+                      <a
+                        href="#"
+                        class="social-button dribble"
+                        title="Dribble"
+                        aria-label="Dribble"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Twitter"
-                        >Twitter</a
+                      <a
+                        href="#"
+                        class="social-button twitter"
+                        title="Twitter"
+                        aria-label="Twitter"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Email">Email</a>
+                      <a
+                        href="#"
+                        class="social-button mail"
+                        title="Email"
+                        aria-label="Email"
+                      >
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -429,17 +586,31 @@
                 <div class="social">
                   <ul class="social-links">
                     <li>
-                      <a href="#" class="social-button" title="Dribble"
-                        >Dribble</a
+                      <a
+                        href="#"
+                        class="social-button dribble"
+                        title="Dribble"
+                        aria-label="Dribble"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Twitter"
-                        >Twitter</a
+                      <a
+                        href="#"
+                        class="social-button twitter"
+                        title="Twitter"
+                        aria-label="Twitter"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Email">Email</a>
+                      <a
+                        href="#"
+                        class="social-button mail"
+                        title="Email"
+                        aria-label="Email"
+                      >
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -461,17 +632,31 @@
                 <div class="social">
                   <ul class="social-links">
                     <li>
-                      <a href="#" class="social-button" title="Dribble"
-                        >Dribble</a
+                      <a
+                        href="#"
+                        class="social-button dribble"
+                        title="Dribble"
+                        aria-label="Dribble"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Twitter"
-                        >Twitter</a
+                      <a
+                        href="#"
+                        class="social-button twitter"
+                        title="Twitter"
+                        aria-label="Twitter"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Email">Email</a>
+                      <a
+                        href="#"
+                        class="social-button mail"
+                        title="Email"
+                        aria-label="Email"
+                      >
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -493,17 +678,31 @@
                 <div class="social">
                   <ul class="social-links">
                     <li>
-                      <a href="#" class="social-button" title="Dribble"
-                        >Dribble</a
+                      <a
+                        href="#"
+                        class="social-button dribble"
+                        title="Dribble"
+                        aria-label="Dribble"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Twitter"
-                        >Twitter</a
+                      <a
+                        href="#"
+                        class="social-button twitter"
+                        title="Twitter"
+                        aria-label="Twitter"
                       >
+                      </a>
                     </li>
                     <li>
-                      <a href="#" class="social-button" title="Email">Email</a>
+                      <a
+                        href="#"
+                        class="social-button mail"
+                        title="Email"
+                        aria-label="Email"
+                      >
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -516,6 +715,7 @@
       <section class="subscription">
         <div class="container">
           <div class="subscription-content">
+            <img class="subscription-sign" src="images/letter.svg" alt="" />
             <h2 class="hidden" id="subscription">Subscription</h2>
             <p class="section-summary">Subscribe to stay in the loop</p>
             <form class="form-subscription" action="URL" method="POST">
@@ -537,33 +737,55 @@
             <h2 class="hidden" id="contacts">Contacts</h2>
             <p class="section-summary">Drop us a line</p>
             <ul class="contacts-list">
-              <li class="contacts-item">
+              <li class="contacts-item address">
+                <img class="contact-sign" src="images/destination.svg" alt="" />
                 <span class="contacts-name">Address</span>
                 <span class="contacts-info">
                   Level 6, 23 Pitt St, Sydney
                 </span>
               </li>
 
-              <li class="contacts-item">
+              <li class="contacts-item phone">
+                <img class="contact-sign" src="images/phone.svg" alt="" />
                 <span class="contacts-name">Phone</span>
                 <span class="contacts-info">+61 9 211 3741</span>
               </li>
 
-              <li class="contacts-item">
+              <li class="contacts-item email">
+                <img class="contact-sign" src="images/letter.svg" alt="" />
                 <span class="contacts-name">Email</span>
                 <span class="contacts-info bold">hey@halcyon.com.au</span>
               </li>
             </ul>
+
             <div class="social">
               <ul class="social-links">
                 <li>
-                  <a href="#" class="social-button" title="Dribble">Dribble</a>
+                  <a
+                    href="#"
+                    class="social-button dribble"
+                    title="Dribble"
+                    aria-label="Dribble"
+                  >
+                  </a>
                 </li>
                 <li>
-                  <a href="#" class="social-button" title="Twitter">Twitter</a>
+                  <a
+                    href="#"
+                    class="social-button twitter"
+                    title="Twitter"
+                    aria-label="Twitter"
+                  >
+                  </a>
                 </li>
                 <li>
-                  <a href="#" class="social-button" title="Email">Email</a>
+                  <a
+                    href="#"
+                    class="social-button mail"
+                    title="Email"
+                    aria-label="Email"
+                  >
+                  </a>
                 </li>
               </ul>
             </div>
