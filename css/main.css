@@ -93,7 +93,7 @@ a {
 }
 
 /*SOCIAL LINKS STYLE*/
- .social-links {
+.social-links {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -103,16 +103,16 @@ a {
   justify-content: center;
 }
 
- .social-links a {
+.social-links a {
   display: inline-block;
   background-color: #242830;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
- .social-links .dribble {
+.social-links .dribble {
   background-image: url(../images/dribble.svg);
   background-repeat: no-repeat;
   background-size: 30px 30px;
@@ -187,8 +187,8 @@ a {
   color: #3dc9b3;
 }
 
-.menu-navigation a:active
-.menu-navigation a:focus  {
+.menu-navigation a:active,
+.menu-navigation a:focus {
   color: #309383;
 }
 
@@ -247,6 +247,8 @@ a {
 .lower-header .button:active,
 .lower-header .button:focus {
   background-color: #242830;
+  box-shadow: none;
+  transform: translateY(-10px);
 }
 
 /*PORTFOLIO SECTION STYLE*/
@@ -279,20 +281,24 @@ a {
 
 .services-content {
   padding-top: 98px;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
 }
 
 .services .section-summary {
   padding-bottom: 103px;
 }
 
-.services h3 {
-  padding-top: 34px;
-  padding-bottom: 37px;
+.services .services-item h3 {
+  margin: 0;
+  padding-top: 85px;
   font-size: 15px;
   font-weight: 500;
   color: #353535;
   text-transform: uppercase;
+}
+
+.services .services-item p {
+  padding-top: 37px;
 }
 
 .services-list {
@@ -318,14 +324,41 @@ a {
   margin-right: 0px;
 }
 
+.services-list .design {
+  background-image: url(../images/laptop-shadow.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.services-list .web {
+  background-image: url(../images/brackets-shadow.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.services-list .heart {
+  background-image: url(../images/heart-shadow.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.services-list img {
+  margin-top: 40px;
+}
+
 /*PROFESSIONALS*/
 .professionals {
+  background-image: linear-gradient(
+    to right,
+    rgb(243, 245, 248),
+    rgb(255, 255, 255)
+  );
   width: 100%;
   min-width: 1180px;
 }
 
 .professionals-content {
-  width: 785px;
+  width: 500px;
   margin-left: 590px;
   padding-bottom: 215px;
   background-color: #ffffff;
@@ -443,7 +476,7 @@ a {
 }
 
 .features .img-cover a:active,
-.features .img-cover a:focus{
+.features .img-cover a:focus {
   color: #c8cbcf;
 }
 
@@ -488,9 +521,9 @@ a {
 
 .order a:active,
 .orser a:focus {
-  border: 1px  #8c9398;
+  border: 1px #8c9398;
   background-color: #8c9398;
-  
+
   color: #242830;
 }
 
@@ -532,6 +565,11 @@ a {
 .subscription .subscription-sign {
   width: 30px;
   height: 27px;
+  padding-bottom: 15px;
+}
+
+.subscription .section-summary {
+  padding-bottom: 40px;
 }
 
 .subscription::before {
@@ -546,6 +584,8 @@ a {
 }
 
 .subscription-content {
+  padding-top: 123px;
+  padding-bottom: 132px;
   z-index: 10;
   position: relative;
 }
@@ -553,9 +593,8 @@ a {
 .subscription .form-subscription button {
   background-color: #3dc9b3;
   border: none;
-
   width: 100px;
-  height: 68px;
+  height: 67px;
   font-family: "Gotham Rounded", "Arial", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -583,7 +622,7 @@ a {
 }
 
 .subscription .form-subscription input[type="email"] {
-  width: 355px;
+  width: 350px;
   height: 64px;
   background: transparent;
   border: 1px solid #ffffff;
@@ -604,17 +643,25 @@ a {
 }
 
 .contacts-content {
-  padding-bottom: 240px;
+  padding-top: 123px;
+  padding-bottom: 10px;
+}
+
+.contacts .section-summary {
+  padding-bottom: 125px;
 }
 
 .contacts-item {
   background-color: #ffffff;
   width: 360px;
   height: 150px;
+  box-shadow: 0 3px 3px rgb(200, 203, 207);
 }
 
 .contacts-name {
+  display: inline-block;
   color: #3dc9b3;
+  letter-spacing: 2.5px;
   padding-bottom: 29px;
   text-transform: uppercase;
 }
@@ -623,7 +670,9 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-bottom: 100px;
 }
+
 .contacts-list {
   display: flex;
   justify-content: space-around;
@@ -637,7 +686,6 @@ a {
 
 /*FOOTER STYLE*/
 .footer-main {
-  font-weight: 400;
   width: 100%;
   min-width: 1180px;
   background-color: #242830;
@@ -647,7 +695,11 @@ a {
   padding-bottom: 50px;
 }
 .footer-links a {
-  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 10px;
+  font-weight: 400;
+  font-style: normal;
+  color: #a1a9b0;
 }
 
 .footer-links a:hover {
@@ -655,8 +707,7 @@ a {
   color: #ffffff;
 }
 
-.footer-links a:active
-.footer-links a:focus {
+.footer-links a:active .footer-links a:focus {
   text-decoration: underline #8c9398;
   color: #8c9398;
 }
