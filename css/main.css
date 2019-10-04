@@ -205,14 +205,15 @@ a {
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 12px;
-  padding-bottom: 17px;
+  padding-bottom: 33px;
 }
 
 .lower-header p {
+  margin: 0;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 2.5px;
-  padding-bottom: 50px;
+  padding-bottom: 64px;
 }
 
 .lower-header .dark {
@@ -225,12 +226,13 @@ a {
 
 .lower-header .button {
   display: inline-block;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 15px;
   border: none;
   border-radius: 3%;
   background-color: #3dc9b3;
   letter-spacing: 2px;
-  padding: 21px 37px;
+  padding: 20px 38px;
   margin: 0 auto;
 
   box-shadow: 0px 3px 0px #309383;
@@ -358,12 +360,33 @@ a {
   min-width: 1180px;
 }
 
-.professionals-content {
-  width: 500px;
-  margin-left: 590px;
-  padding-bottom: 215px;
-  background-color: #ffffff;
+.professionals .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
+
+.professionals-left-part {
+  padding-top: 40px;
+  width: 590px;
+}
+
+.professionals-right-part {
+  padding-top: 132px;
+  padding-left: 100px;
+  width: 590px;
+}
+
+.professionals-right-part .section-summary {
+  padding-bottom: 60px;
+}
+
+.professionals-right-part p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+}
+
 .owl2 {
   width: 457px;
 }
