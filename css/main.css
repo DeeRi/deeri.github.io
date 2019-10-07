@@ -226,8 +226,9 @@ a {
 
 .lower-header .button {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
+  font-style: normal;
   border: none;
   border-radius: 3%;
   background-color: #3dc9b3;
@@ -302,6 +303,13 @@ a {
 
 .services .services-item p {
   padding-top: 37px;
+}
+
+.services .services-icon{
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 70px;
+  height: 70px;
 }
 
 .services-list {
