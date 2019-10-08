@@ -143,6 +143,27 @@ a {
   background-color: #309383;
 }
 
+/*OWL-STYLE*/
+.owl1 .owl-dots .owl-dot span,
+.owl2 .owl-dots .owl-dot span {
+  border: 1px solid #8c9398;
+  background: #ffffff;
+}
+
+.owl1 .owl-dots .owl-dot.hover span, 
+.owl2 .owl-dots .owl-dot:hover span {
+  background: #8c9398;
+}
+
+.owl1 .owl-dots .owl-dot.active span, 
+.owl1 .owl-dots .owl-dot:active span,
+.owl1 .owl-dots .owl-dot:focus span,
+.owl2 .owl-dots .owl-dot.active span, 
+.owl2 .owl-dots .owl-dot:active span,
+.owl2 .owl-dots .owl-dot:focus span {
+  background: #242830;
+}
+
 /*HEADER STYLE*/
 .header-main {
   background-image: url(../images/main_back.jpg);
@@ -305,7 +326,7 @@ a {
   padding-top: 37px;
 }
 
-.services .services-icon{
+.services .services-icon {
   margin: 0 auto;
   padding-top: 40px;
   width: 70px;
@@ -580,6 +601,11 @@ a {
 .team h3 {
   color: #353535;
   text-transform: uppercase;
+}
+
+.team .owl-carousel .owl-item img {
+  width: 197px;
+  margin: 0 auto;
 }
 
 /*SUBSCRIPTION SECTION STYLE*/
