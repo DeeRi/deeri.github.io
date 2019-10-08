@@ -164,6 +164,28 @@ a {
   background: #242830;
 }
 
+/*BUTTON STYLES*/
+.button-move {
+  border: none;
+  background: rgba(68, 180, 164, 0.9);
+  border-radius: 50%;
+  height: 50px;
+  width: 52px;
+}
+ .button-move-up {
+  background-image: url(../images/arrow_up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px 35px;
+}
+
+.button-move-down {
+  background-image: url(../images/arrow_down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px 35px;
+}
+
 /*HEADER STYLE*/
 .header-main {
   background-image: url(../images/main_back.jpg);
