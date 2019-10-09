@@ -208,7 +208,8 @@ a {
   text-align: center;
 }
 .header-main .header-content {
-  padding-top: 63px;
+  padding-top: 50px;
+  padding-bottom: 345px;
 }
 
 .navigation {
@@ -272,8 +273,7 @@ a {
 }
 
 .lower-header {
-  padding-top: 136px;
-  padding-bottom: 342px;
+  padding-top: 150px;
 }
 
 .lower-header h1 {
@@ -283,7 +283,7 @@ a {
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 12px;
-  padding-bottom: 33px;
+  padding-bottom: 15px;
 }
 
 .lower-header p {
@@ -344,11 +344,25 @@ a {
   line-height: 30px;
 }
 .portfolio-content {
-  padding-top: 100px;
+  padding-top: 98px;
 }
 .portfolio .section-summary {
   padding-bottom: 87px;
+  position: relative;
 }
+
+.portfolio .section-summary::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../images/decor.png);
+  background-repeat: no-repeat;
+  left: 290px;
+  top: 48px;
+  width: 555px;
+  height: 14px;
+}
+
 .portfolio p {
   padding: 0;
   margin: 0;
@@ -364,21 +378,46 @@ a {
 }
 
 .services-content {
-  padding-top: 98px;
+  padding-top: 99px;
   padding-bottom: 70px;
 }
 
 .services .section-summary {
   padding-bottom: 103px;
+  position: relative;
+}
+
+.services .section-summary::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../images/decor.png);
+  background-repeat: no-repeat;
+  left: 290px;
+  top: 43px;
+  width: 555px;
+  height: 14px;
 }
 
 .services .services-item h3 {
   margin: 0;
-  padding-top: 85px;
+  padding-top: 88px;
   font-size: 15px;
   font-weight: 500;
   color: #353535;
   text-transform: uppercase;
+  position: relative;
+}
+
+.services .services-item h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #3dc9b3;
+  width: 33px;
+  height: 3px;
+  left: 163px;
+  top: 130px;
 }
 
 .services .services-item p {
@@ -388,8 +427,8 @@ a {
 .services .services-icon {
   margin: 0 auto;
   padding-top: 40px;
-  width: 70px;
-  height: 70px;
+  width: 64px;
+  height: 65px;
 }
 
 .services-list {
@@ -441,8 +480,8 @@ a {
 .professionals {
   background-image: linear-gradient(
     to right,
-    rgb(243, 245, 248) 50%,
-    rgb(255, 255, 255) 50%
+    rgb(243, 245, 248) 40%,
+    rgb(255, 255, 255) 60%
   );
   width: 100%;
   min-width: 1180px;
@@ -456,7 +495,9 @@ a {
 
 .professionals-left-part {
   padding-top: 40px;
+  padding-bottom: 13px;
   width: 590px;
+  box-shadow: -8px 0px 10px -12px #000000 inset;
 }
 
 .professionals-right-part {
@@ -466,17 +507,39 @@ a {
 }
 
 .professionals-right-part .section-summary {
-  padding-bottom: 60px;
+  padding-bottom: 76px;
+  position: relative;
+}
+
+.professionals-right-part .section-summary::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../images/decor_2.png);
+  background-repeat: no-repeat;
+  left: 11px;
+  top: 42px;
+  width: 430px;
+  height: 14px;
 }
 
 .professionals-right-part p {
   margin: 0;
   padding: 0;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
 }
 
-.owl2 {
+.professionals-right-part p:nth-child(4n) {
+  padding-bottom: 0;
+}
+
+.professionals .owl2 {
   width: 457px;
+}
+
+.professionals .owl2 .owl-dots {
+  margin: 0;
+  padding-top: 94px;
 }
 
 /*MOTTO*/
@@ -499,29 +562,42 @@ a {
 }
 
 .motto-content {
-  padding-top: 85px;
+  padding-top: 68px;
   z-index: 10;
   position: relative;
-}
-
-.motto-content p {
-  padding: 0;
-  margin: 0;
+  padding-bottom: 99px;
 }
 
 .first-line {
+  padding: 0;
+  margin: 0;
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 40px;
   letter-spacing: 10px;
+  line-height: 1.4;
+  padding-bottom: 8px;
 }
 
 .second-line {
+  margin: 0;
+  padding: 0;
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 25px;
+  letter-spacing: 7.5px;
+  line-height: 1.4;
+  padding-bottom: 35px;
+}
+
+.button-move-down {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 560px;
+  bottom: 55px;
 }
 
 /*FEATURES SECTION STYLE*/
@@ -549,6 +625,17 @@ a {
   text-transform: uppercase;
 }
 
+.features h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #3dc9b3;
+  width: 33px;
+  height: 3px;
+  left: 163px;
+  bottom: 103px;
+}
+
 .features-list {
   list-style: none;
   padding: 0;
@@ -569,7 +656,11 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(50, 145, 132, 0.6);
+  background-color: rgb(50, 145, 132, 0.6);
+  background-image: url(../images/magnifier.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 27px;
   opacity: 0;
   transition: all 0.2s ease;
 }
@@ -581,6 +672,8 @@ a {
 .features .img-cover a {
   text-transform: uppercase;
   color: #ffffff;
+  display: inline-block;
+  margin-top: 40px;
 }
 
 .features .img-cover a:hover {
@@ -590,11 +683,6 @@ a {
 .features .img-cover a:active,
 .features .img-cover a:focus {
   color: #c8cbcf;
-}
-
-.features .features-sign {
-  width: 30px;
-  height: 27px;
 }
 
 .features .owl1 .owl-dots {
@@ -653,11 +741,24 @@ a {
 
 .team-content {
   padding-top: 85px;
-  padding-bottom: 97px;
+  padding-bottom: 96px;
 }
 
 .team .section-summary {
   padding-bottom: 96px;
+  position: relative;
+}
+
+.team .section-summary::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../images/decor.png);
+  background-repeat: no-repeat;
+  left: 290px;
+  top: 42px;
+  width: 555px;;
+  height: 14px;
 }
 
 .team-list {
@@ -683,6 +784,17 @@ a {
   padding: 0;
   margin: 0;
   padding-bottom: 47px;
+}
+
+.team h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #3dc9b3;
+  width: 33px;
+  height: 3px;
+  left: 163px;
+  bottom: 170px;
 }
 
 .team p {
@@ -716,11 +828,11 @@ a {
 .subscription .subscription-sign {
   width: 30px;
   height: 27px;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
 
 .subscription .section-summary {
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 }
 
 .subscription::before {
@@ -744,12 +856,13 @@ a {
 .subscription .form-subscription button {
   background-color: #3dc9b3;
   border: none;
-  width: 100px;
+  width: 99px;
   height: 67px;
   font-family: "Gotham Rounded", "Arial", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 15px;
+  letter-spacing: 3px;
   color: #ffffff;
   text-transform: uppercase;
   transition: all 0.2s ease;
@@ -773,7 +886,7 @@ a {
 }
 
 .subscription .form-subscription input[type="email"] {
-  width: 350px;
+  width: 352px;
   height: 64px;
   background: transparent;
   border: 1px solid #ffffff;
@@ -806,12 +919,25 @@ a {
 
 .contacts .section-summary {
   padding-bottom: 125px;
+  position: relative;
+}
+
+.contacts .section-summary::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../images/decor.png);
+  background-repeat: no-repeat;
+  left: 290px;
+  top: 42px;
+  width: 100%;
+  height: 100%;
 }
 
 .contacts-item {
   background-color: #ffffff;
   width: 360px;
-  box-shadow: 0 3px 3px rgb(200, 203, 207);
+  box-shadow: 0 1px 1px rgb(200, 203, 207);
   padding-top: 30px;
 
   display: flex;
@@ -826,6 +952,7 @@ a {
   padding-bottom: 22px;
   text-transform: uppercase;
 }
+
 .contacts .contacts-info {
   display: inline-block;
   padding-bottom: 32px;
@@ -835,7 +962,7 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 93px;
   display: flex;
   justify-content: space-around;
 }
