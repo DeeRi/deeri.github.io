@@ -258,6 +258,7 @@ a {
 
 .navigation-close .menu-navigation {
   opacity: 0;
+  z-index: -1;
 }
 
 .navigation-open .menu-icon-2 {
@@ -757,7 +758,7 @@ a {
   background-repeat: no-repeat;
   left: 290px;
   top: 42px;
-  width: 555px;;
+  width: 555px;
   height: 14px;
 }
 
@@ -877,19 +878,21 @@ a {
   background-color: #242830;
 }
 
-.subscription .form-subscription input[placeholder] {
+.subscription .form-subscription input[type="email"] {
   font-family: "Gotham Rounded", "Arial", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
   color: #ffffff;
-}
 
-.subscription .form-subscription input[type="email"] {
   width: 352px;
   height: 64px;
   background: transparent;
   border: 1px solid #ffffff;
+}
+
+.subscription .form-subscription input::placeholder {
+  color: #a1a9b0;
 }
 
 .subscription .button-move-up {
@@ -1001,4 +1004,136 @@ a {
 .footer-links a:focus {
   text-decoration: underline #8c9398;
   color: #8c9398;
+}
+
+/*ORDER FORM STYLE*/
+
+.modal-close,
+.modal-overlay-close {
+  display: none;
+}
+
+.modal-open,
+.modal-overlay-open {
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.6);
+  z-index: 15;
+}
+
+.modal-contact .section-summary {
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+.modal-contact {
+  z-index: 20;
+  left: 50%;
+  margin-left: -280px;
+  width: 500px;
+  top: 120px;
+  padding: 30px 30px;
+  background-color: rgb(36, 40, 48);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.modal .button-modal-close {
+  width: 22px;
+  height: 22px;
+  font-size: 0px;
+  border: 0;
+  background-color: transparent; 
+  cursor: pointer;
+
+  position: absolute;
+  right: -34px;
+  top: 0px;
+}
+
+.modal .button-modal-close::before,
+.modal .button-modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.modal .button-modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal .button-modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal input,
+.modal textarea {
+  font-family: "Gotham Rounded", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  color: #242830;
+}
+
+.modal-contact input::placeholder,
+.modal-contact textarea::placeholder {
+  color: #a1a9b0;
+}
+
+.modal-contact .form-contact-info {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.modal-contact p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.modal-contact .message {
+  width: 400px;
+  height: 100px;
+}
+
+.modal-contact .modal-submit {
+  background-color: #3dc9b3;
+  border: none;
+  border-radius: 5%;
+  width: 100px;
+  height: 40px;
+
+  font-family: "Gotham Rounded", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.modal-contact .modal-submit:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+  background-color: #309383;
+}
+
+.modal-contact .modal-submit:focus,
+.modal-contact .modal-submit:active {
+  background-color: #242830;
 }

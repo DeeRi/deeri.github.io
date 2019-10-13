@@ -26,3 +26,28 @@ hamburger.addEventListener("click", function() {
     nav.classList.add("navigation-close");
   }
 });
+
+var openButton = document.querySelector(".order-button");
+var modal = document.querySelector(".modal-contact");
+var overlay = document.querySelector(".modal-overlay");
+var closeButton = document.querySelector(".button-modal-close");
+
+openButton.addEventListener("click", function() {
+  if(modal.classList.contains("modal-close")) {
+    modal.classList.remove("modal-close");
+    modal.classList.add("modal-open");
+    overlay.classList.remove("modal-overlay-close");
+    overlay.classList.add("modal-overlay-open");
+  }
+}
+)
+
+closeButton.addEventListener("click", function() {
+  if(modal.classList.contains("modal-open")) {
+    modal.classList.remove("modal-open");
+    modal.classList.add("modal-close");
+    overlay.classList.remove("modal-overlay-open");
+    overlay.classList.add("modal-overlay-close");
+  }
+}
+)

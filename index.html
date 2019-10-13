@@ -421,7 +421,7 @@
       <div class="order">
         <div class="container">
           <h2 class="hidden" id="order">Make an order</h2>
-          <a href="#" class="button">Ignite your passion</a>
+          <a class="button order-button">Ignite your passion</a>
         </div>
       </div>
 
@@ -738,7 +738,7 @@
         <div class="container">
           <div class="subscription-content">
             <svg
-            class="subscription-sign"
+              class="subscription-sign"
               height="512px"
               style="enable-background:new 0 0 512 512;"
               version="1.1"
@@ -907,7 +907,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer-main">
       <div class="footer-links">
         <div class="container">
@@ -920,6 +919,64 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal modal-contact modal-close">
+      <h2 class="hidden">Contact form</h2>
+      <p class="section-summary">
+        Send us your contacts and we'll write you as soon as possible
+      </p>
+      <form class="form-contact" action="URL" method="POST">
+        <p>
+          <label class="hidden" for="user-name">Name</label>
+          <input
+            class="form-contact-info"
+            type="text"
+            name="name"
+            id="user-name"
+            placeholder="Name"
+          />
+        </p>
+
+        <p>
+          <label class="hidden" for="user-surname">Surname</label>
+          <input
+            class="form-contact-info"
+            type="text"
+            name="surname"
+            id="user-surname"
+            placeholder="Surname"
+          />
+        </p>
+
+        <p>
+          <label for="user-email" class="hidden">Email</label>
+          <input
+            class="form-contact-info"
+            type="email"
+            id="user-email"
+            placeholder="Enter your email"
+          />
+        </p>
+
+        <p>
+          <label class="hidden" for="user-message">Leave your message</label>
+          <textarea
+            class="form-contact-info message"
+            name="message-place"
+            id="user-message"
+            cols="30"
+            rows="10"
+            placeholder="Leave your message here"
+          ></textarea>
+        </p>
+        <button class="modal-submit" type="submit" name="send_user_mail">
+          Send
+        </button>
+      </form>
+      <button class="button-modal-close" type="button">Close</button>
+    </section>
+    <div class="modal-overlay modal-overlay-close"></div>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
