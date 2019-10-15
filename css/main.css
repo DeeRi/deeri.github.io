@@ -237,7 +237,7 @@ a {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 
 .menu-navigation li {
@@ -276,12 +276,10 @@ a {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-  transform: translateY(-10px);
 }
 
 .navigation-open .menu-navigation {
-opacity: 1;
-transform: translateY(0);
+  opacity: 1;
 }
 
 
@@ -356,7 +354,7 @@ transform: translateY(0);
 .lower-header .button:active,
 .lower-header .button:focus {
   background-color: #242830;
-  box-shadow: none;
+  box-shadow: 0px 3px 0px #242830;
   transform: translateY(-10px);
 }
 
@@ -752,9 +750,8 @@ transform: translateY(0);
 
 .order a:active,
 .orser a:focus {
-  border: 1px #8c9398;
+  border: 1px solid #8c9398;
   background-color: #8c9398;
-
   color: #242830;
 }
 
@@ -1075,16 +1072,19 @@ transform: translateY(0);
 
 .modal-close,
 .modal-overlay-close {
-  display: none;
+  opacity: 0;
+  transform: translateY(-1000px);
 }
 
 .modal-open,
 .modal-overlay-open {
   opacity: 1;
+  transform: translateY(0px);
 }
 
 .modal {
   position: fixed;
+  transition: all 1s ease;
 }
 
 .modal-overlay {
