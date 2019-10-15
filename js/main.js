@@ -51,3 +51,34 @@ closeButton.addEventListener("click", function() {
   }
 }
 )
+
+var upButton = document.querySelector(".button-move-up")
+
+upButton.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+});
+});
+
+
+var orderBlock = document.querySelector(".order");
+var downButton = document.querySelector(".button-move-down")
+
+downButton.addEventListener("click", function() {
+  window.scrollTo({
+    //координата топ - координта блока минус половина высоты экрана и плюс половина высоты блока (чтобы блок встал по центру относительно вертикали)
+    top: getCoords(orderBlock).top - document.documentElement.clientHeight/2 + 100,
+    behavior: "smooth"
+});
+});
+
+// функция, получаем координаты элемента в контексте документа
+function getCoords(elem) {
+  let box = elem.getBoundingClientRect();
+
+  return {
+    top: box.top + pageYOffset,
+    left: box.left + pageXOffset
+  };
+}
